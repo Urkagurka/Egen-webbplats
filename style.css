@@ -11,7 +11,10 @@ p{
     background-color: rgb(51, 54, 80);
     color:white;
 }
-
-#index main{
-    grid-template-columns:
-}
+ ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    list-style-type: none;
+    text-align:left;
+    padding: 10px;
+ }
