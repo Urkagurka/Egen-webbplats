@@ -1,20 +1,37 @@
 h1{
     color:white;
+    text-align: center;
+    grid-area: header;
 }
 nav{
     background-color: rgb(51, 54, 80);
+    grid-area: nav;
 }
 body{
     background-color: rgba(38, 38, 73, 0.849);
+    display:grid;
+    grid-template-columns: 290px, 290px, 290px, 290px;
+    grid-template-rows: 100px, 100px, 100px, 100px, 100px;
+    grid-template-areas:    
+    "header header header header"
+    "nav nav nav nav"
+    "main main . . "
+    "footer footer footer footer ";
+    
 }
 p{
     background-color: rgb(51, 54, 80);
     color:white;
+    grid-area: p;
 }
- ul{
+ul{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr ;
     list-style-type: none;
     text-align:left;
     padding: 10px;
- }
+    grid-area: ul;
+}
+main{
+    grid-area: main
+}
