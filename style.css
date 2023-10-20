@@ -1,37 +1,62 @@
-h1{
+body{
+    background-color: rgba(38, 38, 73, 0.849)
+}
+.page {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+      "head head head head"
+      "nav  nav  nav  nav"
+      "main main main selfie"
+      "foot foot foot foot";
+    grid-template-rows: 50px 50px 1fr 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+  
+header {
+    grid-area: head;
     color:white;
     text-align: center;
-    grid-area: header;
 }
-nav{
-    background-color: rgb(51, 54, 80);
+  
+nav {
     grid-area: nav;
+    background-color: rgb(51, 54, 80);
 }
-body{
-    background-color: rgba(38, 38, 73, 0.849);
-    display:grid;
-    grid-template-columns: 290px, 290px, 290px, 290px;
-    grid-template-rows: 100px, 100px, 100px, 100px, 100px;
-    grid-template-areas:    
-    "header header header header"
-    "nav nav nav nav"
-    "main main . . "
-    "footer footer footer footer ";
-    
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    list-style-type: none;
+    text-align:center;
+    padding: 10px;
 }
+ul > li > a{
+    color:rgb(214, 118, 27);
+}
+ul > li > a:hover{
+    color:rgb(230, 230, 230);
+}
+  
+main {
+    grid-area: main;
+    background-color: rgb(51, 54, 80);
+}
+  
+footer {
+    grid-area: foot;
+    background-color: rgb(51, 54, 80);
+}
+
 p{
     background-color: rgb(51, 54, 80);
     color:white;
-    grid-area: p;
 }
-ul{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    list-style-type: none;
-    text-align:left;
-    padding: 10px;
-    grid-area: ul;
+
+.selfielink{
+    grid-area:selfie;
+    background-color:rgb(51, 54, 80);
 }
-main{
-    grid-area: main
+.selfie{
+    width:100%;
 }
