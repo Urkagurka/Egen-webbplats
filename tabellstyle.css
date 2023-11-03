@@ -1,41 +1,42 @@
 body{
-    background-color: rgba(38, 38, 73, 0.849)
+    background-color: rgba(38, 38, 73, 0.849) /* Byta färg på bakgrunden i body */
 }
-.page {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-areas:
+.page {                                         /* redigera klassen page */
+    display: grid;                              /* rita ut en grid */
+    width: 100%;                                /* bredd 100% */
+    height: 100%;                               /* höjd 100% */
+    grid-template-areas:                        /* hur griden ska se ut och vart saker ska vara i den */
       "head head head"
       "nav  nav  nav"
       "main trabell selfie"
+      "JZX  A310 TE71"
       "foot foot foot";
-    grid-template-rows: 50px 50px 1fr 50px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 1fr 1fr 50px; /* Hur många rader griden ska ha */
+    grid-template-columns: 1fr 1fr 1fr;         /* hur många kolumner griden ska ha */
 }
   
-header {
-    grid-area: head;
-    color:white;
-    text-align: center;
+header {                                        /* redigera header */
+    grid-area: head;                            /* den har grid area header */
+    color:white;                              /* text färg vit */
+    text-align: center;                         /* texten ska vara i mitten */
 }
   
-nav {
-    grid-area: nav;
-    background-color: rgb(51, 54, 80);
+nav {                                           /* redigera nav */
+    grid-area: nav;                             /* den heter nav */
+    background-color: rgb(51, 54, 80);        /* bakgrund är blå */
 }
 ul{
-    display: grid;
+    display: grid;                              /* rita ut en till grid */
     grid-template-columns: 1fr 1fr 1fr ;
-    list-style-type: none;
+    list-style-type: none;                      /* listan har inga siffror eller andra markeringar */
     text-align:center;
     padding: 10px;
 }
-ul > li > a{
-    color:rgb(214, 118, 27);
+ul > li > a{                                    /* redigera lälnken */
+    color:rgb(214, 118, 27);                  /* länkens färg */
 }
 ul > li > a:hover{
-    color:rgb(230, 230, 230);
+    color:rgb(230, 230, 230);                 /* länkens färg när man håller över den */
 }
   
 main {
@@ -53,20 +54,21 @@ p{
     color:white;
 }
 
-.selfielink{
+.selfielink{                                    /* redigera klassen som kallas selfielink */
     grid-area:selfie;
     background-color:rgb(51, 54, 80);
     text-align: center;
     width: 100%;
 }
-.selfie{
+.me{
     width: 100%;
+    height:100%;
 }
 
 table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width:400px;
+    border: 1px solid black;                  /* Den ska  ha en heldragen border som är svart */
+    border-collapse: collapse;                  /* Stilen på border ska vara collapse */
+    width:400px;                                /* den ska vara 400pixlar bred */
     color:white;
     grid-area: trabell;
     text-align: center;
@@ -79,22 +81,50 @@ td{
     border: 1px solid black;
     border-collapse: collapse;
 }
-th:nth-child(1) { background-color:rgb(247, 179, 80); }
-th:nth-child(2) { background-color:rgb(62, 214, 199); }
-th:nth-child(3) { background-color:rgb(247, 179, 80); }
-td:nth-child(1) { background-color:rgb(247, 179, 80); }
-td:nth-child(2) { background-color:rgb(62, 214, 199); }
-td:nth-child(3) { background-color:rgb(247, 179, 80); }
-th:nth-child(1) { color:rgb(50, 49, 63); }
-th:nth-child(2) { color:rgb(50, 49, 63); }
-th:nth-child(3) { color:rgb(50, 49, 63); }
-td:nth-child(1) { color:rgb(50, 49, 63); }
-td:nth-child(2) { color:rgb(50, 49, 63); }
-td:nth-child(3) { color:rgb(50, 49, 63); }
+th:nth-child(1) { background-color:rgb(247, 179, 80); }         /* randig tabell */
+th:nth-child(2) { background-color:rgb(62, 214, 199); }         /* randig tabell */
+th:nth-child(3) { background-color:rgb(247, 179, 80); }         /* randig tabell */
+td:nth-child(1) { background-color:rgb(247, 179, 80); }         /* randig tabell */
+td:nth-child(2) { background-color:rgb(62, 214, 199); }         /* randig tabell */
+td:nth-child(3) { background-color:rgb(247, 179, 80); }         /* randig tabell */
+th:nth-child(1) { color:rgb(50, 49, 63); }                      /* tabell text färg*/
+th:nth-child(2) { color:rgb(50, 49, 63); }                      /* tabell text färg*/
+th:nth-child(3) { color:rgb(50, 49, 63); }                      /* tabell text färg*/
+td:nth-child(1) { color:rgb(50, 49, 63); }                      /* tabell text färg*/
+td:nth-child(2) { color:rgb(50, 49, 63); }                      /* tabell text färg*/
+td:nth-child(3) { color:rgb(50, 49, 63); }                      /* tabell text färg*/
 .TABELLISTA{
     display:grid;
     grid-template-columns: 1fr;
     list-style-type: none;
     text-align:center;
     padding: 10px;
+}
+
+.JZX{
+    grid-area:JZX;
+    width:100%;
+}
+.A310{
+    grid-area:A310;
+    width:100%;
+}
+.TE71{
+    grid-area:TE71;
+    width:100%;
+}
+.billänk1{
+    background-color:rgb(51, 54, 80);
+    text-align: center;
+    width: 100%;
+}
+.billänk2{
+    background-color:rgb(51, 54, 80);
+    text-align: center;
+    width: 100%;
+}
+.billänk3{
+    background-color:rgb(51, 54, 80);
+    text-align: center;
+    width:100%;
 }
